@@ -1,0 +1,22 @@
+#landing{
+    width: 100vw;
+    height: 100vh;
+}
+
+#aboutMe{
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+}
+
+#portfolio{
+    width: 100vw;
+    height: 100vh;
+    background-color: aquamarine;
+}
+
+#contactMe{
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+}
