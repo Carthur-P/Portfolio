@@ -9,6 +9,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #feffff;
 }
 
 #landing img{
@@ -22,19 +23,19 @@ body{
     margin: 0px;
     width: 100%;
     height: 100vh;
-    background-color: aqua;
+    background-color: #def2f1;
 }
 
 #portfolio{
     margin: 0px;
     width: 100%;
     height: 100vh;
-    background-color: aquamarine;
+    background-color: #3aada9;
 }
 
 #contactMe{
     margin: 0px;
     width: 100%;
     height: 100vh;
-    background-color: blue;
+    background-color: #2b7a78;
 }
