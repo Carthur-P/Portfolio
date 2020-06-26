@@ -46,6 +46,7 @@ nav a img {
   padding: 0px;
   width: 40px;
   height: 40px;
+  opacity: 0.5;
 }
 
 nav a:visited {
@@ -60,16 +61,17 @@ nav a:visited {
   width: 120px;
 }
 
-nav li:last-child{
-    margin-top: auto;
+nav li:last-child {
+  margin-top: auto;
+  opacity: 0.5;
 }
 
-nav li:last-child img{
-    width: 40px;
-    height: 40px;
-    margin-left: 10px;
-    transform: rotate(180deg);
-    transition: all 0.5s ease-in;
+nav li:last-child img {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  transform: rotate(180deg);
+  transition: all 0.5s ease-in;
 }
 
 nav:hover {
@@ -84,14 +86,13 @@ nav:hover .navText {
   display: block;
 }
 
-nav:hover li img:last-child{
-    transform: rotate(0deg);
-    margin-left: 100px;
+nav:hover li img:last-child {
+  transform: rotate(0deg);
+  margin-left: 100px;
 }
 
 #home {
   margin: 0px;
-  margin-left: 20px;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -109,6 +110,7 @@ nav:hover li img:last-child{
   border-radius: 10px;
   background-color: #def2f1;
   box-shadow: 0px 0px 10px gray;
+  text-align: center;
 }
 
 .profileImage {
@@ -133,7 +135,6 @@ nav:hover li img:last-child{
 
 .greeting {
   width: 50%;
-  text-align: center;
 }
 
 a img {
@@ -180,4 +181,45 @@ a img {
   width: 100%;
   height: 100vh;
   background-color: #2b7a78;
+}
+
+/*Medium Screen (Tablet)*/
+@media screen and (max-width: 1255px) {
+  .profileContainer {
+    width: 500px;
+  }
+}
+
+/*Small Screen (Phone)*/
+@media screen and (max-width: 450px) {
+  .profileContainer {
+    width: 250px;
+    height: 450px;
+  }
+
+  .profileContainer h1{
+      font-size: 20px;
+  }
+
+  .profileImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px gray;
+  }
+
+  .label {
+    font-size: 15px;
+  }
+
+  .label img {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .greeting {
+    width: 80%;
+    font-size: 15px;
+  }
 }
