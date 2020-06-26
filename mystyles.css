@@ -75,7 +75,7 @@ nav li:last-child img {
 }
 
 nav:hover {
-  width: 160px;
+  width: 140px;
 }
 
 nav:hover ul {
@@ -88,7 +88,7 @@ nav:hover .navText {
 
 nav:hover li img:last-child {
   transform: rotate(180deg);
-  margin-left: 100px;
+  margin-left: 90px;
 }
 
 #home {
@@ -199,8 +199,7 @@ nav:hover li img:last-child {
   box-shadow: 0px 0px 10px gray;
 }
 
-.aboutContainer h3,
-p {
+.aboutContainer h3,p {
   padding: 0px;
   margin: 0px;
 }
@@ -208,13 +207,13 @@ p {
 .aboutContainer p img {
   width: 20px;
   height: 20px;
-  margin-left: 5px;
+  margin: 0px 5px;
 }
 
 .skillsContainer {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(10, 1fr);
   justify-content: center;
 }
 
@@ -244,6 +243,21 @@ p {
   width: 100%;
   height: 100vh;
   background-color: #2b7a78;
+}
+
+footer {
+  background-color: #17252a;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+footer a {
+  color: #3aada9;
+}
+
+footer a:visited {
+  color: #3aada9;
 }
 
 /*Medium Screen (Tablet)*/
