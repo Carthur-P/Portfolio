@@ -20,7 +20,7 @@ nav {
   width: 60px;
   height: 100vh;
   background-color: rgb(0, 0, 0, 0.5);
-  transition: all 0.5s ease-in;
+  transition: width 0.5s ease-in;
 }
 
 nav ul {
@@ -70,7 +70,7 @@ nav li:last-child img {
   width: 40px;
   height: 40px;
   margin-left: 10px;
-  transform: rotate(180deg);
+  transform: rotate(0deg);
   transition: all 0.5s ease-in;
 }
 
@@ -87,7 +87,7 @@ nav:hover .navText {
 }
 
 nav:hover li img:last-child {
-  transform: rotate(0deg);
+  transform: rotate(180deg);
   margin-left: 100px;
 }
 
