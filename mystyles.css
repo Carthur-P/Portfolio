@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0px;
   font-family: "Open Sans", sans-serif;
@@ -199,7 +203,8 @@ nav:hover li img:last-child {
   box-shadow: 0px 0px 10px gray;
 }
 
-.aboutContainer h3,p {
+.aboutContainer h3,
+p {
   padding: 0px;
   margin: 0px;
 }
@@ -242,47 +247,47 @@ nav:hover li img:last-child {
   align-items: center;
 }
 
-.projectContainer{
-    display: flex;
-    margin: 0px 20px;
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #feffff;
-    border-radius: 10px;
-    width: 300px;
-    box-shadow: 0px 0px 15px #2b7a78;
+.projectContainer {
+  display: flex;
+  margin: 0px 20px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #feffff;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0px 0px 15px #2b7a78;
 }
 
-.projectContainer img{
-    margin: 10px;
-    width: 95%;
+.projectContainer img {
+  margin: 10px;
+  width: 95%;
 }
 
 .projectInfo {
-    margin: 0px;
-    padding: 10px;
-    text-align: center;
-    background-color: #2b7a78;
-    color: white;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+  margin: 0px;
+  padding: 10px;
+  text-align: center;
+  background-color: #2b7a78;
+  color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
-.projectButton{
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    justify-content: center;
+.projectButton {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
 }
 
-.projectButton .button{
-    margin: 15px;
+.projectButton .button {
+  margin: 15px;
 }
 
-.projectContainer:hover{
-    box-shadow: 0px 0px 15px #17252a;
+.projectContainer:hover {
+  box-shadow: 0px 0px 15px #17252a;
 }
 
 #contactMe {
