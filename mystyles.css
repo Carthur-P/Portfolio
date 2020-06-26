@@ -101,6 +101,7 @@ nav:hover li img:last-child {
 }
 
 .profileContainer {
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -134,11 +135,20 @@ nav:hover li img:last-child {
 }
 
 .greeting {
-  width: 50%;
+  margin: 20px;
+  width: 70%;
 }
 
-a img {
-  margin-left: 20px;
+.social {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.social a img {
+  margin: 0px 10px;
   width: 50px;
   height: 50px;
 }
@@ -146,7 +156,7 @@ a img {
 .button {
   background-color: #feffff;
   border-radius: 50px;
-  margin-top: 25px;
+  margin: 20px 0px;
   padding: 10px 15px;
   box-shadow: 0px 0px 10px gray;
   text-decoration: none;
@@ -158,6 +168,10 @@ a img {
   box-shadow: 0px 0px 20px #3aada9;
 }
 
+.aboutContainer .button:hover {
+  box-shadow: 0px 0px 20px white;
+}
+
 .button:visited {
   color: black;
 }
@@ -167,6 +181,55 @@ a img {
   width: 100%;
   height: 100vh;
   background-color: #def2f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutContainer {
+  width: 50%;
+  margin: 0px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 10px;
+  background-color: #3aada9;
+  box-shadow: 0px 0px 10px gray;
+}
+
+.aboutContainer h3,
+p {
+  padding: 0px;
+  margin: 0px;
+}
+
+.aboutContainer p img {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+.skillsContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+
+.skillsContainer img {
+  margin: 0px auto;
+  padding: 0px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.skillsContainer p {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
 }
 
 #projects {
@@ -197,8 +260,8 @@ a img {
     height: 450px;
   }
 
-  .profileContainer h1{
-      font-size: 20px;
+  .profileContainer h1 {
+    font-size: 20px;
   }
 
   .profileImage {
