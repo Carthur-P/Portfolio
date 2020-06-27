@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
+html::-webkit-scrollbar {
+  width: 0px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -15,6 +19,20 @@ a {
 
 a:visited {
   text-decoration: none;
+}
+
+.progressBar {
+  width: 10px;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  right: 0px; 
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+#progress {
+  width: 50px;
+  background-color: #1bc7c1;
 }
 
 nav {
