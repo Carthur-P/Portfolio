@@ -289,8 +289,10 @@ p {
 }
 
 .projectInfo {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   margin: 0px;
-  margin-top: auto;
   padding: 10px;
   text-align: center;
   background-color: #2b7a78;
@@ -301,6 +303,7 @@ p {
 
 .projectButton {
   margin: 0px;
+  margin-top: auto;
   padding: 0px;
   display: flex;
   justify-content: center;
