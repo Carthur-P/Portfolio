@@ -26,7 +26,7 @@ a:visited {
   height: 100vh;
   position: fixed;
   top: 0px;
-  right: 0px; 
+  right: 0px;
   background-color: rgb(0, 0, 0, 0.5);
 }
 
@@ -190,7 +190,8 @@ nav:hover li img:last-child {
   box-shadow: 0px 0px 20px #3aada9;
 }
 
-.aboutContainer .button:hover {
+.aboutContainer .button:hover,
+.projectButton .button:hover {
   box-shadow: 0px 0px 20px white;
 }
 
@@ -260,12 +261,16 @@ p {
   height: 100vh;
   background-color: #3aada9;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 .projectContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projectCard {
   display: flex;
   margin: 0px 20px;
   padding: 0px;
@@ -278,13 +283,14 @@ p {
   box-shadow: 0px 0px 15px #2b7a78;
 }
 
-.projectContainer img {
+.projectCard img {
   margin: 10px;
   width: 95%;
 }
 
 .projectInfo {
   margin: 0px;
+  margin-top: auto;
   padding: 10px;
   text-align: center;
   background-color: #2b7a78;
@@ -304,8 +310,8 @@ p {
   margin: 15px;
 }
 
-.projectContainer:hover {
-  box-shadow: 0px 0px 15px #17252a;
+.projectCard:hover {
+  box-shadow: 0px 0px 10px #17252a;
 }
 
 #contactMe {
