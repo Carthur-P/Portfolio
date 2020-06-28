@@ -175,10 +175,18 @@ nav:hover li img:last-child {
   height: 50px;
 }
 
+/* .buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+} */
+
 .button {
   background-color: #feffff;
   border-radius: 50px;
-  margin: 20px 0px;
+  margin-top: 20px;
   padding: 10px 15px;
   box-shadow: 0px 0px 10px gray;
   text-decoration: none;
@@ -280,7 +288,7 @@ p {
   background-color: #feffff;
   border-radius: 10px;
   width: 300px;
-  box-shadow: 0px 0px 15px #2b7a78;
+  box-shadow: 0px 0px 10px #17252a;
 }
 
 .projectCard img {
@@ -313,15 +321,59 @@ p {
   margin: 15px;
 }
 
-.projectCard:hover {
-  box-shadow: 0px 0px 10px #17252a;
-}
-
 #contactMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
   margin: 0px;
   width: 100%;
   height: 100vh;
   background-color: #2b7a78;
+}
+
+form {
+  min-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin: 0px;
+  background-color: #17252a;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #17252a;
+}
+
+form h1 {
+  color: white;
+}
+
+form input,
+textarea {
+  color: black;
+  width: 90%;
+  margin: 10px 0px;
+  padding: 10px;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 10px;
+  border: 0px;
+}
+
+form button {
+  width: 30%;
+  margin: 20px 0px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #feffff;
+  border-radius: 50px;
+  border: 0px;
+  transition: box-shadow 0.5s;
+}
+
+form button:hover{
+  box-shadow: 0px 0px 10px #feffff;
 }
 
 footer {
