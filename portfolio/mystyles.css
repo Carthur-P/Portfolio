@@ -520,12 +520,6 @@ footer a:visited {
     font-size: 14px;
   }
 
-  .aboutContainer p img {
-    width: 20px;
-    height: 20px;
-    margin: 0px 5px;
-  }
-
   .skillsContainer {
     grid-template-columns: repeat(5, 1fr);
   }
@@ -550,3 +544,68 @@ footer a:visited {
 }
 
 /*Small Phone (iPhone 5s)*/
+@media screen and (max-width: 350px) {
+  .profileContainer {
+    font-size: 12px;
+  }
+
+  .button {
+    margin-top: 15px;
+    padding: 5px 10px;
+  }
+
+  .profileImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px gray;
+  }
+
+  .label img {
+    margin-right: 5px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .social a img {
+    margin: 0px 5px;
+    width: 35px;
+    height: 35px;
+  }
+
+  .aboutContainer {
+    width: 75%;
+    font-size: 11px;
+  }
+
+  .aboutContainer p img {
+    margin-left: 1px;
+    width: 15px;
+    height: 15px;
+  }
+
+
+  .aboutContainer img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .skillsContainer {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  #projects {
+    height: 100%;
+    padding: 0px 0px;
+  }
+
+  .projectContainer {
+    font-size: 10px;
+  }
+
+  .contactFormContainer {
+    width: 85%;
+    height: 450px;
+    font-size: 15px;
+  }
+}
