@@ -249,18 +249,17 @@ p {
   justify-content: center;
 }
 
-.skillsContainer img {
-  margin: 0px auto;
+.skillImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 0px;
-  width: 50px;
-  height: 50px;
   text-align: center;
 }
 
-.skillsContainer p {
-  margin: 0px;
-  padding: 0px;
-  text-align: center;
+.skillImage img {
+  width: 50px;
+  height: 50px;
 }
 
 #projects {
@@ -276,11 +275,12 @@ p {
 .projectContainer {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .projectCard {
   display: flex;
-  margin: 0px 20px;
+  margin: 20px 20px;
   padding: 0px;
   display: flex;
   flex-direction: column;
@@ -291,22 +291,33 @@ p {
   box-shadow: 0px 0px 10px #17252a;
 }
 
+.projectCard h2 {
+  margin: 0px;
+  margin-top: 15px;
+}
+
 .projectCard img {
   margin: 10px;
-  width: 95%;
+  width: 300px;
+  height: 300px;
 }
 
 .projectInfo {
   display: flex;
   flex-direction: column;
   height: 100%;
+  width: 100%;
   margin: 0px;
-  padding: 10px;
   text-align: center;
   background-color: #2b7a78;
   color: white;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+.projectInfo p {
+  margin: 15px;
+  padding: 0px
 }
 
 .projectButton {
@@ -318,7 +329,7 @@ p {
 }
 
 .projectButton .button {
-  margin: 15px;
+  margin: 0px 15px 15px 15px;
 }
 
 #contactMe {
@@ -332,8 +343,14 @@ p {
   background-color: #2b7a78;
 }
 
+.contactFormContainer {
+  width: 40%;
+  display: flex;
+  text-align: center;
+}
+
 form {
-  min-width: 500px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -361,6 +378,11 @@ textarea {
   border: 0px;
 }
 
+form input:focus,
+textarea:focus {
+  outline: none;
+}
+
 form button {
   width: 30%;
   margin: 20px 0px;
@@ -372,7 +394,7 @@ form button {
   transition: box-shadow 0.5s;
 }
 
-form button:hover{
+form button:hover {
   box-shadow: 0px 0px 10px #feffff;
 }
 
@@ -381,6 +403,7 @@ footer {
   text-align: center;
   text-decoration: none;
   color: white;
+  padding: 10px 0px;
 }
 
 footer a {
@@ -391,43 +414,139 @@ footer a:visited {
   color: #3aada9;
 }
 
-/*Medium Screen (Tablet)*/
-@media screen and (max-width: 1255px) {
+/*Large tablet (iPad Pro)*/
+@media screen and (max-width: 1200px) {
   .profileContainer {
-    width: 500px;
-  }
-}
-
-/*Small Screen (Phone)*/
-@media screen and (max-width: 450px) {
-  .profileContainer {
-    width: 250px;
-    height: 450px;
-  }
-
-  .profileContainer h1 {
+    width: 65%;
     font-size: 20px;
   }
 
+  .aboutContainer {
+    width: 65%;
+    font-size: 20px;
+  }
+
+  .projectContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+  }
+
+  .projectCard img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .contactFormContainer {
+    width: 60%;
+    font-size: 25px;
+  }
+
+  .contactFormContainer input,
+  textarea,
+  button {
+    font-size: 20px;
+  }
+}
+
+/*Medium Tablet (iPad)*/
+
+/*Large Phone (iPhone X/Pixel XL)*/
+@media screen and (max-width: 500px) {
+  .progressBar {
+    display: none;
+  }
+
+  nav {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: none;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  nav li {
+    width: 100%;
+  }
+
+  nav a img {
+    margin: 5px auto;
+  }
+
+  nav li:last-child {
+    display: none;
+  }
+
+  nav:hover {
+    width: 100vw;
+  }
+
+  nav:hover .navText {
+    display: none;
+  }
+
+  .profileContainer {
+    width: 75%;
+    font-size: 15px;
+  }
+
   .profileImage {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     box-shadow: 0px 0px 10px gray;
   }
 
-  .label {
-    font-size: 15px;
-  }
-
   .label img {
-    margin-right: 5px;
+    margin-right: 10px;
     width: 20px;
     height: 20px;
   }
 
   .greeting {
-    width: 80%;
+    width: 100%;
+  }
+
+  .aboutContainer {
+    width: 75%;
+    font-size: 14px;
+  }
+
+  .aboutContainer p img {
+    width: 20px;
+    height: 20px;
+    margin: 0px 5px;
+  }
+
+  .skillsContainer {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  #projects {
+    height: 100%;
+    padding: 20px 0px;
+  }
+
+  .projectContainer {
     font-size: 15px;
   }
+
+  .contactFormContainer {
+    width: 85%;
+    font-size: 20px;
+  }
+
+  footer {
+    padding-bottom: 60px;
+  }
 }
+
+/*Small Phone (iPhone 5s)*/
