@@ -544,7 +544,7 @@ footer a:visited {
 }
 
 /*Small Phone (iPhone 5s)*/
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 380px) {
   .profileContainer {
     font-size: 12px;
   }
