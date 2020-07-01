@@ -273,6 +273,7 @@ p {
 }
 
 .projectContainer {
+  width: 95%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -287,7 +288,7 @@ p {
   align-items: center;
   background-color: #feffff;
   border-radius: 10px;
-  width: 300px;
+  width: 250px;
   box-shadow: 0px 0px 10px #17252a;
 }
 
@@ -298,8 +299,8 @@ p {
 
 .projectCard img {
   margin: 10px;
-  width: 300px;
-  height: 300px;
+  width: 180px;
+  height: 180px;
 }
 
 .projectInfo {
