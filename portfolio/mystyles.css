@@ -274,6 +274,7 @@ p {
 
 .projectContainer {
   width: 95%;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -281,7 +282,7 @@ p {
 
 .projectCard {
   display: flex;
-  margin: 20px 20px;
+  margin: 15px 15px;
   padding: 0px;
   display: flex;
   flex-direction: column;
@@ -299,8 +300,8 @@ p {
 
 .projectCard img {
   margin: 10px;
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
 }
 
 .projectInfo {
@@ -318,7 +319,8 @@ p {
 
 .projectInfo p {
   margin: 15px;
-  padding: 0px
+  padding: 0px;
+  font-size: 15px;
 }
 
 .projectButton {
