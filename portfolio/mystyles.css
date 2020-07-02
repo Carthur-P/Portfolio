@@ -273,14 +273,16 @@ p {
 }
 
 .projectContainer {
-  width: 95%;
-  height: 100%;
+  padding: 20px;
+  width: 85%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  overflow-x: auto;
+  white-space: nowrap;
+  background-color: rosybrown;
 }
 
 .projectCard {
+  white-space: normal;
   display: flex;
   margin: 15px 15px;
   padding: 0px;
@@ -289,20 +291,19 @@ p {
   align-items: center;
   background-color: #feffff;
   border-radius: 10px;
-  width: 250px;
+  width: 300px;
   box-shadow: 0px 0px 10px #17252a;
 }
 
 .projectCard h2 {
   margin: 0px;
   margin-top: 10px;
-  font-size: 22px;
 }
 
 .projectCard img {
   margin: 10px;
-  width: 180px;
-  height: 180px;
+  width: 250px;
+  height: 250px;
 }
 
 .projectInfo {
@@ -321,7 +322,6 @@ p {
 .projectInfo p {
   margin: 15px;
   padding: 0px;
-  font-size: 15px;
 }
 
 .projectButton {
