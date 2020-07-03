@@ -539,8 +539,8 @@ footer a:visited {
   }
 
   .profileContainer {
-    width: 75%;
     font-size: 15px;
+    width: 75%;
   }
 
   .profileImage {
@@ -562,7 +562,7 @@ footer a:visited {
 
   .aboutContainer {
     width: 75%;
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .skillsContainer {
@@ -572,6 +572,18 @@ footer a:visited {
   #projects {
     height: 100%;
     padding: 20px 0px;
+  }
+
+  #rightButton,
+  #leftButton {
+    display: none;
+  }
+
+  .horizontalScrollContainer {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .projectContainer {
@@ -584,6 +596,7 @@ footer a:visited {
   }
 
   footer {
+    font-size: 15px;
     padding-bottom: 60px;
   }
 }

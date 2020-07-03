@@ -15,7 +15,7 @@ window.onload = () => {
   const rightButton = document.getElementById("rightButton");
   const scrollContainer = document.querySelector(".horizontalScrollContainer");
   // let visibleContainer = scrollContainer.offsetWidth;
-  // let invisibleContainer = document.querySelector(".projectContainer").offsetWidth - visibleContainer - 100;
+  // let invisibleContainer = getInvisibleContainer();
 
   // //get width value of the content hidden in scroll
   // function getInvisibleContainer(){
