@@ -5,7 +5,12 @@ html::-webkit-scrollbar {
 }
 
 .horizontalScrollContainer::-webkit-scrollbar {
-  display: none;
+  height: 10px;
+}
+
+.horizontalScrollContainer::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
 
 html {
@@ -17,7 +22,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-button:focus{
+button:focus {
   border: 0px;
   outline: none;
 }
@@ -301,13 +306,14 @@ p {
   border-radius: 5px;
 }
 
-#leftButton:hover, #rightButton:hover{
+#leftButton:hover,
+#rightButton:hover {
   background-color: rgb(0, 0, 0, 0.5);
 }
 
 .horizontalScrollContainer {
+  padding-bottom: 10px;
   overflow-x: auto;
-  scroll-padding-right: 20px;
   width: 78%;
   scroll-behavior: smooth;
 }
