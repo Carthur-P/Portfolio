@@ -13,13 +13,11 @@ html::-webkit-scrollbar {
   border-radius: 10px;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
+html,
 body {
   margin: 0px;
   font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 button:focus {
@@ -421,6 +419,7 @@ textarea {
   font-family: "Open Sans", sans-serif;
   border-radius: 10px;
   border: 0px;
+  resize: none;
 }
 
 form input:focus,
@@ -471,19 +470,21 @@ footer a:visited {
     font-size: 20px;
   }
 
-  .projectContainer {
-    display: flex;
-    flex-wrap: wrap;
-    width: 70%;
+  #rightButton,
+  #leftButton {
+    display: none;
   }
 
-  .projectCard img {
-    width: 200px;
-    height: 200px;
+  .projectContainer {
+    width: 2300px;
+  }
+
+  .projectCard {
+    font-size: 20px;
   }
 
   .contactFormContainer {
-    width: 60%;
+    width: 65%;
     font-size: 25px;
   }
 
@@ -495,6 +496,50 @@ footer a:visited {
 }
 
 /*Medium Tablet (iPad)*/
+@media screen and (max-width: 800px) {
+  .profileContainer {
+    font-size: 18px;
+  }
+
+  .aboutContainer {
+    font-size: 18px;
+  }
+
+  .skillsContainer {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  #projects {
+    height: 100%;
+    padding: 20px 0px;
+  }
+
+  .horizontalScrollContainer {
+    overflow: hidden;
+  }
+
+  .projectContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .projectCard {
+    font-size: 18px;
+  }
+
+  .contactFormContainer {
+    width: 70%;
+    font-size: 20px;
+  }
+
+  .contactFormContainer input,
+  textarea,
+  button {
+    font-size: 18px;
+  }
+}
 
 /*Large Phone (iPhone X/Pixel XL)*/
 @media screen and (max-width: 500px) {
@@ -559,34 +604,17 @@ footer a:visited {
   .greeting {
     width: 100%;
   }
+  #aboutMe{
+    height: 100%;
+    padding: 30px 0px;
+  }
 
   .aboutContainer {
     width: 75%;
     font-size: 15px;
   }
 
-  .skillsContainer {
-    grid-template-columns: repeat(5, 1fr);
-  }
-
-  #projects {
-    height: 100%;
-    padding: 20px 0px;
-  }
-
-  #rightButton,
-  #leftButton {
-    display: none;
-  }
-
-  .horizontalScrollContainer {
-    overflow: hidden;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .projectContainer {
+  .projectCard {
     font-size: 15px;
   }
 
@@ -595,13 +623,19 @@ footer a:visited {
     font-size: 20px;
   }
 
+  .contactFormContainer input,
+  textarea,
+  button {
+    font-size: 15px;
+  }
+
   footer {
     font-size: 15px;
-    padding-bottom: 60px;
+    padding: 10px 10px 60px 10px;
   }
 }
 
-/*Small Phone (iPhone 5s)*/
+/*Small Phone (iPhone 8 and later)*/
 @media screen and (max-width: 380px) {
   .profileContainer {
     font-size: 12px;
@@ -615,8 +649,6 @@ footer a:visited {
   .profileImage {
     width: 100px;
     height: 100px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 10px gray;
   }
 
   .label img {
@@ -630,10 +662,9 @@ footer a:visited {
     width: 35px;
     height: 35px;
   }
-
+  
   .aboutContainer {
-    width: 75%;
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .aboutContainer p img {
@@ -644,26 +675,33 @@ footer a:visited {
 
 
   .aboutContainer img {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
   }
 
-  .skillsContainer {
-    grid-template-columns: repeat(5, 1fr);
+  .projectCard {
+    width: 230px;
+    font-size: 12px;
   }
 
-  #projects {
-    height: 100%;
-    padding: 20px 0px;
-  }
-
-  .projectContainer {
-    font-size: 10px;
+  .projectCard img{
+    width: 200px;
+    height: 200px;
   }
 
   .contactFormContainer {
     width: 85%;
-    height: 450px;
     font-size: 15px;
+  }
+
+  .contactFormContainer input,
+  textarea,
+  button {
+    font-size: 12px;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 10px 10px 60px 10px;
   }
 }

@@ -22,10 +22,6 @@ window.onload = () => {
   //   return document.querySelector(".projectContainer").offsetWidth - visibleContainer - 100;
   // }
 
-  // scrollContainer.onscroll = () => {
-  //   console.log(scrollContainer.scrollLeft);
-  // }
-
   //scrolling right on right button click
   rightButton.onclick = () => {
     scrollContainer.scrollLeft += 600;
